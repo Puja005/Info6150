@@ -15,7 +15,7 @@ I recommend using only LOWERCASE letters in your username, because it makes thin
 
 ### Slack.com
 You will need a (free of cost) account on slack.com to join in the discussion there.  That account is specific to the class workspace (there is not a "general" account as on github)
-* https://rebrand.ly/seainfo6150-slack
+* https://rebrand.ly/bosinfo6150-slack
 
 I recommend the desktop client and/or the mobile client over the web-based one.  Slack is where most info on the class is discussed, just like many programming shops.
 
@@ -69,7 +69,7 @@ Do the following, which will let me (and you) know that everything is working.  
 
 1. Complete all the installation and config steps above
 2. If you have not already followed the below link to create your own copy of the class repo on github, follow it now:
-    * https://rebrand.ly/seainfo6150-github
+    * https://rebrand.ly/bosinfo6150-github
 3. If you have not cloned the repository this file is in to your computer, do so now (`git clone value-from-the-code-button-on-github`)
     * the `value-from-code-button-on-github` is an instruction, you should replace that value with the value you can copy when you click the "code" button on the repo in github.
     * After cloning, be sure to be in the correct directory, the root directory of the project, that is, the directory that git clone just created
