@@ -1,6 +1,6 @@
 # Project 1: Multi-page Website
 
-** Due Wed Oct 12, 11:59pm PT **
+** Due Wed Feb 15, 11:59pm ET **
 
 ## Goal
 
