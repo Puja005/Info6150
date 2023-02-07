@@ -1,0 +1,163 @@
+
+
+html,
+body {
+	height: 100%;
+
+	background-color: #ECECEC;
+}
+#root {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	height: 100%;
+	row-gap: 1rem;
+}
+body {
+	margin: 0;
+}
+
+/* header */
+
+header {
+	width: 100%;
+}
+
+
+.header_main {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	width: 100%;
+}
+
+.header_text {
+	margin: 0 auto;
+	grid-column: span 11;
+	display: flex;
+	align-items: center;
+}
+
+.header_menu {
+	background-color: #FF8B13;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 0.6rem;
+	list-style: none;
+	padding: 1rem;
+	margin: 0;
+}
+
+.header_item {
+	grid-column: span 4;
+	display: flex;
+	justify-content: space-around;
+}
+
+.header_link {
+	color: blue;
+}
+
+.headerImage {
+	grid-column: span 1;
+
+	aspect-ratio: 1/1;
+	width: 100%;
+	margin: 0;
+}
+
+/* Cards */
+
+.cardsgroup {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 1rem;
+}
+
+.cards {
+	grid-column: span 3;
+
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+
+	border: 1px solid rgb(95, 135, 160);
+	border-radius: 1rem;
+	background-color: white;
+}
+.card_heading {
+	text-align: center;
+}
+.cardLogo {
+	aspect-ratio: 1/1;
+	width: 80%;
+	border-radius: 1rem;
+}
+.cardText {
+	text-align: center;
+}
+.cards:hover {
+	border: 1px solid black;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.readMoreCard {
+	display: inline-block;
+	padding: 0.5rem;
+	text-align: center;
+
+	margin: 0.25rem;
+	border: 1px solid skyblue;
+	background-color:#FF8B13;
+}
+.readMoreCard:hover {
+	opacity: 0.7;
+}
+
+footer {
+	
+	margin-top: auto;
+}
+.footer_menu {
+	background-color: #FF8B13;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+
+	gap: 0.5rem;
+	list-style: none;
+	padding: 1rem;
+	margin: 0;
+}
+
+.item_footer {
+	grid-column: span 4;
+	display: flex;
+	justify-content: space-around;
+}
+.footer_link {
+	color: blue;
+}
+
+@media screen and (max-width: 50rem) {
+	.header_menu {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.cards {
+		grid-column: span 6;
+		background-color: white;
+		margin-top: 1rem;
+	}
+
+	.cardsgroup {
+		display: block;
+		margin: auto;
+		width: 50%;
+	}
+
+	.footer_menu {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
