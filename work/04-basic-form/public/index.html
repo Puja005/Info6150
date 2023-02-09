@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration</title>
+</head>
+<body>
+    <div id="root">
+        <header>
+            <div class="header_main">
+                <img src="http://placekitten.com/70/70?image=2" alt="Cat Header" class="headerImage">
+                <h1 class="header_text">Registration Form</h1>
+            </div>
+        </header>
+        <main class="main">
+    <div class="form-center">
+    <form action="/submit" method="post">
+        <div class="label_and_input">
+        <label for="name" class="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+    </div> 
+    <div class="emailflex">
+        <label for="email" class="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+    </div>
+    <div>
+         <select name="tiers" id="tiers">
+            <option value ="" disabled selected>Please Select Tier</option>
+          <option value="1">Platinum Tier</option>
+          <option value="2">Gold Tier</option>
+          <option value="3">Silver Tier</option>
+        </select>
+    </div>
+    <div class="fb1">
+     <input type="checkbox" name="spam" id="spam" value="yes" checked>
+        <label for="spam">Do you want us to send you annoying emails?</label>
+    </div>
+    <button type="submit" value="submit">Register</button>
+    </form>
+   </div>
+
+</main>
+<footer>
+    <nav class="nav_footer">
+        <ul class="footer_menu">
+            <li class="item_footer">
+                <a class = "footer_link" href="contact">Contact</a>
+            </li>
+            <li class="item_footer">
+                <a class = "footer_link" href="privacypolicy">Privacy Policy</a>
+            </li>
+            <li class="item_footer">
+                <a class = "footer_link" href="develop">Develop</a>
+            </li>
+        </ul>
+
+    </nav>
+</footer>
+</div>
+</body>
+</html>
