@@ -1,0 +1,371 @@
+
+html,
+body {
+	height: 100%;
+
+	background-color: white;
+}
+#root {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	grid-template-rows: auto 1fr auto;
+	height: 100%;
+	row-gap: 1rem;
+}
+body {
+	margin: 0;
+}
+/* form */
+
+input[type=text],
+input[type=email],
+input[type=password] {
+	padding: 6px 10px;
+	margin: 8px 0;
+	
+}
+select {
+	padding: 6px 10px;
+	margin: 8px 0;
+
+
+	border: none;
+	border-radius: 4px;
+	background-color: white;
+}
+
+input:required {
+	border: 1px solid blue;
+}
+
+input:invalid {
+	border: 1px solid red;
+}
+select:required {
+	border: 1px solid blue;
+}
+
+select:invalid {
+	border: 1px solid red;
+}
+
+
+
+/* Button animation */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+
+
+
+
+.wrapper {
+	min-height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.registration_form {
+	background: blanchedalmond;
+	padding: 25px;
+	border-radius: 5px;
+	width: 400px;
+}
+.registration_form .title {
+	text-align: center;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: black;
+	letter-spacing: 5px;
+	font-weight: 700;
+}
+.form_wrap {
+	margin-top: 35px;
+	margin-bottom: 15px;
+}
+
+
+body {
+    text-align: center;
+}
+form {
+    display: inline-block;
+}
+
+
+
+
+@media screen and (max-width: 50rem) {
+	.header_menu {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.label_and_input {
+		display: flex;
+		flex-direction: column;
+		
+	}
+
+	.name {
+		text-align: left;
+	}
+	.emailflex {
+		display: flex;
+		flex-direction: column;
+	}
+	.email {
+		text-align: left;
+	}
+	.DogFlex,
+	.passwordflex,
+	.Repasswordflex {
+		display: flex;
+		flex-direction: column;
+	}
+	.DogType,
+	.password,
+	.Repassword {
+		text-align: left;
+	}
+
+	.footer_menu {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+label {
+	display: inline-block;
+	width: 5rem;
+	word-wrap: break-word;
+	/* margin: auto; */
+	text-align: center;
+	color: black;
+}
+
+.subscribe{
+	width: auto;
+}
+
+/* header */
+
+header {
+	width: 100%;
+}
+.header_main {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	width: 100%;
+}
+
+.header_text {
+	margin: 0 auto;
+	grid-column: span 11;
+	display: flex;
+	align-items: center;
+}
+
+.header_menu {
+	background-color: black;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 0.6rem;
+	list-style: none;
+	padding: 1rem;
+	margin: 0;
+}
+
+.header_item {
+	grid-column: span 3;
+	display: flex;
+	justify-content: space-around;
+}
+
+.header_link {
+	color: white;
+}
+
+.headerImage {
+	grid-column: span 1;
+
+	aspect-ratio: 1/1;
+	width: 100%;
+	margin: 0;
+	border-radius: 50%;
+}
+
+/* Cards */
+
+
+
+footer {
+
+	margin-top: auto;
+}
+.footer_menu {
+	background-color: black;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+
+	gap: 0.5rem;
+	list-style: none;
+	padding: 1rem;
+	margin: 0;
+}
+
+.item_footer {
+	grid-column: span 4;
+	display: flex;
+	justify-content: space-around;
+}
+.footer_link {
+	color: white;
+}
+
+@media screen and (max-width: 50rem) {
+	.header_menu {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer_menu {
+		display: flex;
+		flex-direction: column;
+	}
+
+}
+
+
+
+/* button animation */
+.button {
+	border-radius: 4px;
+	background-color: green;
+	border: none;
+	color: #ffffff;
+	text-align: center;
+	font-size: 16px;
+	padding: 10px;
+	width: 8rem;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 8px;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+img:hover {
+	box-shadow: 0 0 3px 3px rgba(0, 140, 186, 0.5);
+}
+
+
+
+.header_menu_icon {
+	display: none !important;
+	cursor: pointer;
+  }
+  
+  .headerOfMobile--checkbox {
+	display: none;
+  }
+  
+  .headerOfMobile--overlay_menu {
+	display: none;
+  }
+  
+  @media only screen and (max-width:35rem) {
+	.header_menu_icon {
+	  display: block !important;
+	  position: absolute;
+	  font-size: 2.5rem !important;
+	  color: white;
+	  cursor: pointer;
+	  z-index: 1;
+	  padding: 0.855rem;
+	}
+  
+	.header_menu_icon:hover {
+	  background-color: #9a0109;
+	}
+  
+	.header_menu_icon:checked {
+	  background-color: black;
+	}
+	.headerOfMobile--checkbox:checked ~ div {
+	  left: 0;
+	}
+  
+	.headerOfMobile--overlay_menu {
+	  display: block;
+	}
+  
+	.headerOfMobile--overlay_menu {
+	  position: absolute;
+	  left: -100vw;
+	  top: 0;
+	  width: 100vw;
+	  height: 100vh;
+	  background-color: #000000e0;
+	  z-index: 5;
+	  transition: 0.35s ease-in-out;
+	}
+  
+	.headerOfMobile--overlay_menu > ul {
+	  position: absolute;
+	  top: 3rem;
+	  width: 74.5%;
+	}
+  
+	.headerOfMobile--overlay_menu > ul > li {
+	  list-style: none;
+	  padding: 0.75rem;
+	  color: white;
+	  font-family: "Poppins", sans-serif;
+	  text-align: center;
+	  width: 100%;
+	  /* width: 20rem; */
+	}
+  
+	.headerOfMobile--overlay_menu > ul > li > a {
+	  color: white;
+	  font-family: "Poppins", sans-serif;
+	  text-decoration: none;
+	}
+  
+	.headerOfMobile--overlay_menu > ul > li:nth-child(2n) {
+	  border-top: 0.5px solid white;
+	  border-bottom: 0.5px solid white;
+	}
+	.header_item{
+	  opacity: 0;
+  }
+  
+  }
+  body {
+	
+	font-family: 'Lexend Deca', sans-serif; 
+	color: black;    
+  }
