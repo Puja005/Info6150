@@ -1,0 +1,107 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: antiquewhite;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/*
+Header 
+*/
+
+header {
+  border-bottom: 0.5px dotted black;
+
+  background-color: burlywood;
+}
+
+h1 {
+  text-align: center;
+  color: green;
+}
+
+
+/*
+Main 
+*/
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form * {
+  margin: 0.5rem auto;
+}
+
+form button {
+  margin-top: 3rem;
+
+  width: 9rem;
+  height: 3rem;
+  border: 0;
+
+  color: white;
+  background-color: green;
+}
+
+.required span:after {
+  content: " *";
+  color: red;
+}
+
+.validation-failure {
+  padding: 0.5rem;
+  margin-bottom: 0;
+  border: 1px solid red;
+
+  color: red;
+}
+
+.hide {
+  display: none;
+}
+
+/*
+Footer 
+*/
+
+footer {
+  padding: 1rem;
+
+  border-top: 0.5px dotted black;
+
+  background-color: burlywood;
+}
+
+footer div {
+  text-align: center;
+}
+
+
+@media screen and (max-width: 40rem) {
+  form * {
+    margin: 0.2rem auto;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .label-checkbox {
+    display: block;
+  }
+}
