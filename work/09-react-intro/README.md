@@ -1,6 +1,6 @@
 # React Intro Assignment
 
-**Due Mar 22, 11:59pm PT**
+**Due Mar 22, 11:59pm ET**
 
 ## Goal
 
