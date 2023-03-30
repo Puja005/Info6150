@@ -1,6 +1,6 @@
 # React Components Assignment
 
-**Due XXXXX  11:59pm PT**
+**Due Wed Apr 5, 11:59pm ET**
 
 ## Submission Instructions
 
