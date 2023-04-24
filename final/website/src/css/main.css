@@ -1,0 +1,66 @@
+main {
+    background-image: linear-gradient(to right, #9143f1, #f46186, #f49153, #fff6de, #daee75);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  
+  
+  /**
+  Title 2
+  */
+  
+  .title2 {
+    text-align: center;
+  }
+  
+  .title2 h2 {
+    font-size: 2.5rem;
+  }
+  
+  /**
+  Texts
+  */
+  
+  .texts p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  /**
+  Join us form
+  */
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  
+    padding: 3rem 0;
+  
+    background-image: linear-gradient(to right, #ac72f2, #f29ab0, #f4bb98, #f8e1a4, #e6f2a9);
+  }
+  
+  form * {
+    margin: 0.5rem auto;
+  }
+  
+  form button {
+    margin-top: 3rem;
+  
+    width: 10rem;
+    height: 2rem;
+    border: 0;
+  
+    font-weight: bolder;
+  
+    color: white;
+    background-color: black;
+  }
+  
+  .validation-failure {
+    padding: 0.5rem;
+    margin-bottom: 0;
+    border: 1px solid red;
+  
+    color: red;
+  }
