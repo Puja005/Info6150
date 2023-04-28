@@ -1,0 +1,13 @@
+footer {
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    border-top: 1.5px solid burlywood;
+  
+    text-align: center;
+  
+    background-color: papayawhip;
+  }
+  
+  footer .line {
+    margin: 0rem 5rem 0rem 5rem;
+    border-top: 3px solid var(--pink6);
+  }
